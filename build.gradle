@@ -25,9 +25,9 @@ tasks.named('test') {
 publishing {
     publications {
         mavenJava(MavenPublication) {
-            group = Project.group
-            artifactId = Project.artifactId
-            version = Project.version
+            group = group
+            artifactId = 'publish-github-package-demo'
+            version = version
             from components.java
             versionMapping {
                 usage('java-api') {
