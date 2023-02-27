@@ -26,7 +26,7 @@ publishing {
     publications {
         mavenJava(MavenPublication) {
             group = group
-            artifactId = 'publish-github-package-demo-inchworks'
+            artifactId = 'publish-github-package-demo'
             version = version
             from components.java
             versionMapping {
