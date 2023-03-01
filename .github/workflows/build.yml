@@ -25,11 +25,9 @@ jobs:
         uses: gradle/gradle-build-action@v2
         with:
           arguments: build
-          gradle-executable: /gradle/wrapper/gradle-wrapper.jar
       - name: Publish package
         uses: gradle/gradle-build-action@v2
         with:
           arguments: publish
-          gradle-executable: /gradle/wrapper/gradle-wrapper.jar
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
